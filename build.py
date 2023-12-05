@@ -7,6 +7,10 @@ import boto3
 from botocore.exceptions import ClientError
 
 logger = logging.getLogger(__name__)
+
+os.environ['AWS_PROFILE'] = "default"
+os.environ['AWS_DEFAULT_REGION'] = "ap-northeast-2"
+
 sm_client = boto3.client("sagemaker", region_name = "ap-northeast-2")
 
 
