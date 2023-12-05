@@ -8,7 +8,7 @@ from botocore.exceptions import ClientError
 
 logger = logging.getLogger(__name__)
 
-os.environ['AWS_PROFILE'] = "jenkins"
+os.environ['AWS_PROFILE'] = "default"
 # os.environ['AWS_CONFIG_FILE'] = "~/.aws/config"
 
 sm_client = boto3.client("sagemaker")
