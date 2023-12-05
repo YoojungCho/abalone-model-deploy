@@ -9,9 +9,13 @@ from botocore.exceptions import ClientError
 logger = logging.getLogger(__name__)
 
 os.environ['AWS_PROFILE'] = "default"
-# os.environ['AWS_CONFIG_FILE'] = "~/.aws/config"
+aws_access_key = os.environ['aws_access_key']
+aws_secret_access_key = os.environ['aws_secret_access_key']
 
-sm_client = boto3.client("sagemaker")
+sm_client = boto3.client("sagemaker",
+                         region_name = "ap-northeast-2",
+                         aws_access_key_id = aws_access_key,
+                         aws_secret_access_key_ = aws_secret_access_key)
 
 
 def get_approved_package(model_package_group_name):
