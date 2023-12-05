@@ -12,8 +12,8 @@ for name, value in os.environ.items():
   print("{0}: {1}".format(name, value))
 
 # os.environ['AWS_PROFILE'] = "default"
-# aws_access_key = os.environ['aws_access_key']
-# aws_secret_access_key = os.environ['aws_secret_access_key']
+aws_access_key = os.environ['aws_access_key']
+aws_secret_access_key = os.environ['aws_secret_access_key']
 
 sm_client = boto3.client("sagemaker",
                          region_name = "ap-northeast-2",
