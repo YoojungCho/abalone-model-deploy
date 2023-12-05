@@ -11,7 +11,7 @@ if (awsCredentialId == null) {
 def sagemakerProjectName = "jenkins-project4"
 def sourceModelPackageGroupName = "jenkins-project4-model"
 def sagemakerProjectId = "p-9bbltflz7xk9"
-def sagemakerPipelineExecutionRole = "arn:aws:iam::708488536029:role/jenkins_role"
+def modelExecutionRole = "arn:aws:iam::708488536029:role/jenkins_role"
 def awsRegion = "ap-northeast-2"
 def artifactBucket = "sagemaker-project-p-9bbltflz7xk9"
 
