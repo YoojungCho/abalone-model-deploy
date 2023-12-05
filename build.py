@@ -9,8 +9,8 @@ from botocore.exceptions import ClientError
 logger = logging.getLogger(__name__)
 
 # os.environ['AWS_PROFILE'] = "default"
-aws_access_key = os.environ['aws_access_key']
-aws_secret_access_key = os.environ['aws_secret_access_key']
+aws_access_key = os.environ['AWS_ACCESS_KEY']
+aws_secret_access_key = os.environ['AWS_SECRET_ACCESS_KEY']
 
 sm_client = boto3.client("sagemaker",
                          region_name = "ap-northeast-2",
