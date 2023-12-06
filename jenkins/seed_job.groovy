@@ -9,7 +9,7 @@ if (awsCredentialId == null) {
 }
 
 def sagemakerProjectName = "jenkins-example-project"
-def sourceModelPackageGroupName = "jenkins-project4-p-4pt17onurky8"
+def sourceModelPackageGroupName = "jenkins-example-project-p-4pt17onurky8"
 def sagemakerProjectId = "p-4pt17onurky8"
 def modelExecutionRole = "arn:aws:iam::708488536029:role/jenkins_role"
 def awsRegion = "ap-northeast-2"
